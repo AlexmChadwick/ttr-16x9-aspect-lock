@@ -27,6 +27,16 @@ or narrower display it may produce top/bottom bars. These are expected geometry
 examples, not a guarantee of any particular in-game UI result; see the
 [resolution matrix](docs/RESOLUTION_MATRIX.md) and [manual checklist](docs/MANUAL_TEST.md).
 
+## Why not a Content Pack?
+
+Official TTR Content Packs (`.mf` files in `resources/`) **cannot** lock aspect
+ratio, change UI layout, or replace models. They may only alter textures, audio,
+fonts, and the cursor. There is **no official plugin API** for aspect locking.
+
+Editing player-owned `settings.json` (`video.forced-aspect-ratio`) is therefore
+the intentional approach. The setting is **experimental**: the client—not this
+tool—decides how it renders. This project is **MIT** licensed.
+
 ## Quick start
 
 Requirements: Python 3.9+ and a fully closed TTR launcher/client. From an
@@ -49,15 +59,15 @@ does not install a global command):
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
-.\scripts\install.ps1 -DryRun
-.\scripts\install.ps1
+.\\scripts\\install.ps1 -DryRun
+.\\scripts\\install.ps1
 ```
 
 If discovery finds more than one file, select one explicitly or deliberately
 apply to all discovered files:
 
 ```bash
-ttr-aspect-lock --settings "C:\path\to\settings.json" install
+ttr-aspect-lock --settings "C:\\path\\to\\settings.json" install
 ttr-aspect-lock install --all
 ```
 
@@ -103,8 +113,8 @@ ttr-aspect-lock uninstall --latest
 For Windows wrapper users:
 
 ```powershell
-.\scripts\uninstall.ps1 -DryRun
-.\scripts\uninstall.ps1
+.\\scripts\\uninstall.ps1 -DryRun
+.\\scripts\\uninstall.ps1
 ```
 
 Keep the backup until you have verified the game. You may delete the extracted
