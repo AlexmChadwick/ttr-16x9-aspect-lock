@@ -9,7 +9,7 @@ description = "A safe settings installer for the Toontown Rewritten 16:9 aspect 
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "TTR Aspect Lock contributors" }]
+authors = [{ name = "Alex Chadwick" }]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Console",
