@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+  <title id="title">21 by 9 monitor containing a centered 16 by 9 frame</title>
+  <desc id="desc">Dark side pillars bracket a blue sixteen by nine game frame.</desc>
+  <rect width="1200" height="370" rx="14" fill="#141923"/>
+  <rect x="35" y="35" width="1130" height="280" rx="7" fill="#303949" stroke="#8b99ad" stroke-width="2"/>
+  <rect x="265" y="35" width="670" height="280" fill="#3873a8"/>
+  <path d="M265 35V315M935 35V315" stroke="#f4c95d" stroke-width="4"/>
+  <text x="150" y="181" fill="#e8edf5" font-family="system-ui, sans-serif" text-anchor="middle" font-size="23">unused pillar</text>
+  <text x="600" y="163" fill="white" font-family="system-ui, sans-serif" text-anchor="middle" font-size="31" font-weight="700">16:9 forced frame</text>
+  <text x="600" y="202" fill="#e9f3ff" font-family="system-ui, sans-serif" text-anchor="middle" font-size="20">centered UI / game presentation</text>
+  <text x="1050" y="181" fill="#e8edf5" font-family="system-ui, sans-serif" text-anchor="middle" font-size="23">unused pillar</text>
+  <text x="600" y="350" fill="#b9c5d6" font-family="system-ui, sans-serif" text-anchor="middle" font-size="18">Example: 21:9 or 32:9 display</text>
+</svg>
