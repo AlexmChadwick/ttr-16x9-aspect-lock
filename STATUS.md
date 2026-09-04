@@ -2,6 +2,12 @@
 
 Status: release-ready local source tree (2026-09-04 UTC).
 
+**Approach (blunt):** Official Content Packs cannot lock aspect ratio / UI layout
+/ models (textures, audio, fonts, cursor only). There is no official plugin API.
+This tool intentionally edits player-owned `settings.json`
+(`video.forced-aspect-ratio` = `16/9`). That setting is experimental. Licensed
+**MIT**.
+
 This standalone package edits only player-owned `settings.json` files. It does
 not bundle, patch, inspect, inject into, or redistribute the TTR client. Its
 16:9 setting is experimental client behavior; the manual verification guide is
@@ -74,3 +80,14 @@ are intentionally outside this workspace.
 - Scope unchanged: settings-only, no client injection, no proprietary assets.
   16:9 rendering behaviour still requires the manual pass in
   `docs/MANUAL_TEST.md`.
+
+## Confidence review — 2026-09-04 (UTC-4: 2026-09-03 evening)
+
+- MIT confirmed in `LICENSE` and `pyproject.toml` classifiers.
+- Code review of `src/`, `scripts/`, `tests/`: settings-only, backup/restore safe,
+  no client injection, no secrets.
+- One consistency fix: install idempotency now matches `status` float comparison
+  (`ratios_match`) so near-16/9 values do not create needless backups.
+- Docs updated to state Content Packs cannot lock AR; settings edit is intentional.
+- Official plugin path for aspect lock: **does not exist**.
+- See [REVIEW.md](REVIEW.md).
