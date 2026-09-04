@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="title desc">
+  <title id="title">21:9 Ultrawide Display with Centered 16:9 Aspect Lock</title>
+  <desc id="desc">Visual diagram showing a 21:9 ultrawide monitor running Toontown Rewritten with 16:9 aspect lock, illustrating the centered active game area and symmetrical side pillarboxes.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f141c"/>
+      <stop offset="100%" stop-color="#1b2230"/>
+    </linearGradient>
+    <linearGradient id="screenGrad21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b26"/>
+      <stop offset="100%" stop-color="#21293a"/>
+    </linearGradient>
+    <linearGradient id="frameGrad21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#265a88"/>
+      <stop offset="100%" stop-color="#1b3f60"/>
+    </linearGradient>
+    <pattern id="pillarPattern21" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 20L20 0M10 20L20 10M0 10L10 0" stroke="#252d3d" stroke-width="1.5" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Panel -->
+  <rect width="1200" height="500" rx="16" fill="url(#bgGrad21)"/>
+
+  <!-- Header Title -->
+  <text x="600" y="38" fill="#ffffff" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" text-anchor="middle">21:9 Ultrawide Display Framing (e.g. 3440×1440 / 2560×1080)</text>
+  <text x="600" y="60" fill="#9cb3cf" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" text-anchor="middle">Native Display Ratio ~2.39:1 (64:27 / 43:18) | Centered 16:9 Viewport (1.7778)</text>
+
+  <!-- Monitor Outer Bezel -->
+  <rect x="50" y="75" width="1100" height="320" rx="10" fill="#0d1117" stroke="#48566e" stroke-width="3"/>
+
+  <!-- Display Panel Area -->
+  <rect x="56" y="81" width="1088" height="308" rx="6" fill="url(#screenGrad21)"/>
+
+  <!-- Left Pillarbox (12.8% ~ 139px on this 1088px canvas) -->
+  <rect x="56" y="81" width="139" height="308" fill="#181f2c"/>
+  <rect x="56" y="81" width="139" height="308" fill="url(#pillarPattern21)"/>
+
+  <!-- 16:9 Active Game Frame (74.4% ~ 810px) -->
+  <rect x="195" y="81" width="810" height="308" fill="url(#frameGrad21)"/>
+
+  <!-- Right Pillarbox (12.8% ~ 139px) -->
+  <rect x="1005" y="81" width="139" height="308" fill="#181f2c"/>
+  <rect x="1005" y="81" width="139" height="308" fill="url(#pillarPattern21)"/>
+
+  <!-- Pillarbox Separator Borders -->
+  <line x1="195" y1="81" x2="195" y2="389" stroke="#f4c95d" stroke-width="3"/>
+  <line x1="1005" y1="81" x2="1005" y2="389" stroke="#f4c95d" stroke-width="3"/>
+
+  <!-- UI Elements Safe Zone Representation -->
+  <rect x="215" y="101" width="160" height="42" rx="4" fill="#102538" fill-opacity="0.8" stroke="#5294e2" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="295" y="127" fill="#8ec5fc" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Chat Log Safe Area</text>
+
+  <circle cx="250" cy="340" r="32" fill="#102538" fill-opacity="0.8" stroke="#5294e2" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="250" y="344" fill="#8ec5fc" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-weight="600">Laff Meter</text>
+
+  <rect x="475" y="335" width="250" height="42" rx="4" fill="#102538" fill-opacity="0.8" stroke="#5294e2" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="600" y="360" fill="#8ec5fc" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Gags / Battle Tray Safe Zone</text>
+
+  <rect x="915" y="325" width="75" height="52" rx="4" fill="#102538" fill-opacity="0.8" stroke="#5294e2" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="952" y="355" fill="#8ec5fc" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Book</text>
+
+  <!-- 16:9 Central Labels -->
+  <text x="600" y="210" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle">16:9 Active Viewport</text>
+  <text x="600" y="240" fill="#f4c95d" font-family="system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">2560 × 1440 (74.4% of width) / 1920 × 1080 (75.0%)</text>
+  <text x="600" y="265" fill="#d2e3fc" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">HUD anchors comfortably in focal vision — no edge drifting</text>
+
+  <!-- Left Pillar Labels -->
+  <text x="125" y="215" fill="#8e9eb5" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">LEFT PILLAR</text>
+  <text x="125" y="238" fill="#697a91" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">440 px (12.8%)</text>
+  <text x="125" y="258" fill="#506177" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">@ 3440×1440</text>
+  <text x="125" y="278" fill="#506177" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">[320 px @ 2560]</text>
+
+  <!-- Right Pillar Labels -->
+  <text x="1075" y="215" fill="#8e9eb5" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">RIGHT PILLAR</text>
+  <text x="1075" y="238" fill="#697a91" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">440 px (12.8%)</text>
+  <text x="1075" y="258" fill="#506177" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">@ 3440×1440</text>
+  <text x="1075" y="278" fill="#506177" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">[320 px @ 2560]</text>
+
+  <!-- Dimension Indicator Lines at Bottom -->
+  <line x1="56" y1="410" x2="195" y2="410" stroke="#8e9eb5" stroke-width="1.5"/>
+  <line x1="56" y1="405" x2="56" y2="415" stroke="#8e9eb5" stroke-width="1.5"/>
+  <line x1="195" y1="405" x2="195" y2="415" stroke="#8e9eb5" stroke-width="1.5"/>
+  <text x="125" y="426" fill="#8e9eb5" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">440 px</text>
+
+  <line x1="195" y1="410" x2="1005" y2="410" stroke="#f4c95d" stroke-width="2"/>
+  <line x1="195" y1="405" x2="195" y2="415" stroke="#f4c95d" stroke-width="2"/>
+  <line x1="1005" y1="405" x2="1005" y2="415" stroke="#f4c95d" stroke-width="2"/>
+  <text x="600" y="428" fill="#f4c95d" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">2560 px Active Frame Width</text>
+
+  <line x1="1005" y1="410" x2="1144" y2="410" stroke="#8e9eb5" stroke-width="1.5"/>
+  <line x1="1005" y1="405" x2="1005" y2="415" stroke="#8e9eb5" stroke-width="1.5"/>
+  <line x1="1144" y1="405" x2="1144" y2="415" stroke="#8e9eb5" stroke-width="1.5"/>
+  <text x="1075" y="426" fill="#8e9eb5" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">440 px</text>
+
+  <!-- Overall Monitor Width Bracket -->
+  <line x1="56" y1="455" x2="1144" y2="455" stroke="#48566e" stroke-width="1.5"/>
+  <line x1="56" y1="448" x2="56" y2="462" stroke="#48566e" stroke-width="1.5"/>
+  <line x1="1144" y1="448" x2="1144" y2="462" stroke="#48566e" stroke-width="1.5"/>
+  <text x="600" y="475" fill="#a0aec0" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Total Screen Width: 3440 px (UWQHD) / 2560 px (UWD) — Height: 1440 px / 1080 px</text>
+</svg>
