@@ -1,0 +1,11 @@
+# Copy to config.toml and adjust only if you want persistent CLI defaults.
+# Command-line options always win. All keys live at the TOML top level.
+
+# Leave unset to use platform discovery, or select one file.
+# settings_path = "C:/path/to/settings.json"
+
+# For multiple installations, select explicit files instead.
+# settings_paths = ["C:/TTR-A/settings.json", "D:/TTR-B/settings.json"]
+
+# Optional backup location. A relative path resolves beside each settings file.
+backup_directory = "ttr-aspect-lock-backups"

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ttr-aspect-lock"
+version = "1.0.0"
+description = "A safe settings installer for the Toontown Rewritten 16:9 aspect lock"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "TTR Aspect Lock contributors" }]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = ["tomli>=2.0.1; python_version < '3.11'"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+ttr-aspect-lock = "ttr_aspect_lock.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AlexmChadwick/ttr-16x9-aspect-lock"
+Repository = "https://github.com/AlexmChadwick/ttr-16x9-aspect-lock"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ttr_aspect_lock"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
